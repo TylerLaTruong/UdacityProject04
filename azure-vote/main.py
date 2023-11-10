@@ -64,10 +64,7 @@ else:
     title = app.config['TITLE']
 
 # Redis Connection
-if ("REDIS" in os.environ and os.environ['REDIS']):
-    redis_server = os.environ['REDIS']
-else:
-    redis_server = app.config['REDIS']
+redis_server = os.environ['REDIS']
 
    # Redis Connection to another container
 try:
